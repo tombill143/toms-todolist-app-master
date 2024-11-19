@@ -21,6 +21,10 @@ body {
   height: 100%;
 }
 
+.h-16{
+  height: 8rem;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
