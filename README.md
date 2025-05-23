@@ -1,38 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# To-Do List App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is a React-based To-Do List application designed to help users organize tasks efficiently. It includes features such as task creation, editing, completion status, and deletion.
+
+## Tech Stack
+
+- **Frontend:** React, CSS  
+- **Backend:** Supabase (PostgreSQL database and authentication)  
+- **Deployment:** Vercel (frontend)  
+
+## Features
+
+- Add, edit, and delete tasks  
+- Mark tasks as completed  
+- User authentication (sign up, login) via Supabase  
+- Persistent storage of tasks linked to user accounts  
+
+## Architecture & Backend
+
+The backend is built using Supabase, which provides a hosted PostgreSQL database with real-time capabilities and authentication services. The app securely connects to Supabase to store and retrieve tasks per user.
+
+Due to Supabase's free tier limitations, this project’s backend is currently not deployed live. To experience the full functionality:
+
+- Clone the repository  
+- Set up your own Supabase project (free tier available)  
+- Configure environment variables with your Supabase URL and keys  
+- Run the frontend locally using `npm start`  
+
+## Demo
+
+The live frontend is deployed on Vercel: [https://toms-todolist-app-master.vercel.app/](https://toms-todolist-app-master.vercel.app/)  
+*Note: Some backend features may be limited in the live demo due to inactive Supabase backend.*
+
+## Getting Started Locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+git clone https://github.com/yourusername/todo-list-app.git
+cd todo-list-app
+npm install
+# Create a .env file with your Supabase credentials:
+# REACT_APP_SUPABASE_URL=your_supabase_url
+# REACT_APP_SUPABASE_KEY=your_supabase_anon_key
+npm start
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# To-Do List App
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Overview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This is a React-based To-Do List application designed to help users organize tasks efficiently. It includes features such as task creation, editing, completion status, and deletion.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend:** React, CSS  
+- **Backend:** Supabase (PostgreSQL database and authentication)  
+- **Deployment:** Vercel (frontend)  
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Add, edit, and delete tasks  
+- Mark tasks as completed  
+- User authentication (sign up, login) via Supabase  
+- Persistent storage of tasks linked to user accounts  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Architecture & Backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The backend is built using Supabase, which provides a hosted PostgreSQL database with real-time capabilities and authentication services. The app securely connects to Supabase to store and retrieve tasks per user.
 
-## Deploy on Vercel
+Due to Supabase's free tier limitations, this project’s backend is currently not deployed live. To experience the full functionality:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Clone the repository  
+- Set up your own Supabase project (free tier available)  
+- Configure environment variables with your Supabase URL and keys  
+- Run the frontend locally using `npm start`  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Demo
+
+The live frontend is deployed on Vercel: [https://toms-todolist-app-master.vercel.app/](https://toms-todolist-app-master.vercel.app/)  
+*Note: Some backend features may be limited in the live demo due to inactive Supabase backend.*
+
+## Getting Started Locally
+
+```bash
+git clone https://github.com/yourusername/todo-list-app.git
+cd todo-list-app
+npm install
+# Create a .env file with your Supabase credentials:
+# REACT_APP_SUPABASE_URL=your_supabase_url
+# REACT_APP_SUPABASE_KEY=your_supabase_anon_key
+npm start
